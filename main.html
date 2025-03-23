@@ -1,35 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
+        .footer {
+            background: #111;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #777;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin: 8px 0;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #00aced;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 50%;
+            background: #333;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: #00aced;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">App Design</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">SEO Optimization</a></li>
+                    <li><a href="#">Content Marketing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>+91 8879887262</li>
+                    <li><a href="mailto:contact@company.com">contact@company.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="media-icons">🔵</a>
+                    <a href="#" class="media-icons">🐦</a>
+                    <a href="#" class="media-icons">📸</a>
+                    <a href="#" class="media-icons">🔗</a>
+                    <a href="#" class="media-icons">▶️</a>
+                </div>
+            </div>
         </div>
-        <div class="link-boxes">
-          <!-- your code here -->
+
+        <div class="footer-bottom">
+            Copyright &copy; 2025 Company | <a href="#" style="color: white; text-decoration: none;">Privacy Policy</a>
         </div>
-      </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-      </div>
     </footer>
-  </body>
+
+</body>
 </html>
